@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Frontend Mentor | Age Calculator App</title>
+</head>
+  <body>
+  <main>
+        <div class="conteiner">
+            <div class="inputs">
+                <div class="flex">
+                    <label for="day" id="lable_day">DAY</label>
+                    <input class="input_style" id="day" type="text" placeholder="DD">
+                    <div class="validation_style" id="err-msg-day"></div>
+                </div>
+                <div class="flex">
+                    <label for="month" id="lable_month">MONTH</label>
+                    <input class="input_style" id="month" type="text" placeholder="MM">
+                    <div class="validation_style" id="err-msg-month"></div>
+                </div>
+                <div class="flex">
+                    <label for="year" id="lable_year">YEAR</label>
+                    <input class="input_style" id="year" type="text" placeholder="YYYY">
+                    <div class="validation_style" id="err-msg-year"></div>
+                </div>
+            </div>
+            <div class="icon-hr">
+                <div class="hr"></div>
+                <div onclick="agecalculator()">
+                    <img class="icon-bar" src="./assets/images/icon-arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="display_div">
+                <div class="display_text">
+                    <h1><span id="resalt-display-year">--</span> years</h1>
+                </div>
+                <div class="display_text">
+                    <h1><span id="resalt-display-month">--</span> months</h1>
+                </div>
+                <div class="display_text">
+                    <h1><span id="resalt-display-day">--</span> days</h1>
+                </div>
+            </div>
+        </div>
+    </main>
+ <script src="script/script.js"></script>
+  </body>
+</html>

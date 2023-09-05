@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #dbdbdb;
+}
+.conteiner {
+  background-color: #ffffff;
+  height: 560px;
+  width: 650px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 140px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.inputs{
+  display: flex;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.input_style {
+  width: 100px;
+  height: 43px;
+  padding-left: 15px;
+  font-size: 25px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  outline: none;
+  border: 1px solid #696969;
+  border-radius: 3px;
+  font-family: Poppins-Bold;
+}
+.input_style:focus {
+  border: 1px solid #9758ef;
+}
+label {
+  display: inline;
+  font-size: 15px;
+  letter-spacing: 3px;
+  margin-bottom: 5px;
+  color: #696969;
+  font-family: Poppins-Bold;
+}
+.hr {
+  width: 500px;
+  height: 1px;
+  margin-left: 30px;
+  background-color: #dddddd;
+}
+
+.icon-bar {
+  background-color: #9758ef;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: -35px;
+}
+.icon-bar:hover {
+  background-color: black;
+}
+.icon-hr {
+  display: inline-flex;
+}
+.display_text{
+ font-size: 36px;
+  font-family: Poppins-BoldItalic;
+}
+@font-face {
+  font-family: "Poppins-BoldItalic";
+  src: url("../assets/fonts/Poppins-ExtraBoldItalic.ttf");
+}@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../assets/fonts/Poppins-Bold.ttf");
+}
+.display_div {
+  display: inline-block;
+  text-align: start;
+  margin-left: 30px;
+  font-size: 30px;
+}
+span {
+  color: #9758ef;
+  font-family: Poppins-BoldItalic;
+  text-align: center;
+}
+.validation_style {
+  color: red;
+}
+@media (max-width: 767px) {
+  .conteiner {
+    background-color: #ffffff;
+    height: 670px;
+    width: 430px;
+  }
+  .display-div {
+    margin-top: 20px;
+  }
+  .icon-bar {
+    margin-left: -227px;
+  }
+  .input_style {
+    justify-content: space-between;
+    width: 100px;
+    height: 50px;
+    margin-left: -11px;
+  }
+  .icon-hr {
+    width: 410px;
+    margin-top: 20px;
+  }
+}
